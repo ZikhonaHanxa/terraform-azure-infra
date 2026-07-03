@@ -11,6 +11,9 @@ Each version milestone represents a new building block in the cloud environment.
 - **v1.2** → Subnet Deployment (`subnet_name`, `subnet_prefixes` added)  
 - **v1.3** → Network Security Group created (`nsg_name`, rules, association with `subnet_name`)  
 - **v1.4** → Public IP provisioned (`public_ip_name`, allocation method, SKU)  
+- **v1.5** → Network Interface created with IP configuration parameters
+- **v1.6** → Network Interface and Network Security Group associasted.
+- **v1.7** → Up next is Storage account creation
 
 ---
 
