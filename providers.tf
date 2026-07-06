@@ -4,9 +4,16 @@ terraform {
         source = "hashicorp/azurerm"
         version ="4.79.0"
     }
+    random={
+      source = "hashicorp/random"
+      version = "3.9.0"
+    }
   }
 }
 provider "azurerm"   {
     features{}
+  
+}
+provider "random" {
   
 }
