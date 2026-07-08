@@ -94,3 +94,36 @@ Current: VM successfully deployed with Premium SSDs.
 Next: Automation workflows, load balancers, and modularized Terraform structure.
 
 Future: CI/CD integration and advanced monitoring.
+
+Troubleshooting
+During development, several common errors were encountered and resolved:
+
+Incorrect attribute value type  
+Error:
+
+Code
+Inappropriate value for attribute "network_interface_ids": list of string required, but have string.
+Fix: Wrap NIC IDs in a list:
+
+hcl
+network_interface_ids = [azurerm_network_interface.nic.id]
+Invalid VM size  
+Error:
+
+Code
+InvalidParameter: The value 150 provided for the VM size is not valid.
+Fix: Use a valid SKU for the region, e.g. Standard_DS2_v2.
+
+Invalid image SKU/version  
+Error:
+
+Code
+PlatformImageNotFound: The platform image 'Canonical:UbuntuServer:18.04-TLS:latest' is not available.
+Fix: Corrected typo from 18.04-TLS → 18.04-LTS and set version = "latest".
+
+VM size and disk type mismatch  
+Error:
+
+Code
+Requested operation cannot be performed because the VM size Standard_D2_v2 does not support the storage account type Premium_LRS...
+Fix: Changed VM size to Standard_DS2_v2 which supports Premium SSDs.
