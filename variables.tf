@@ -61,4 +61,61 @@ variable "account_replication_type" {
     type = string
   
 }
+variable "vm_name" {
+    type = string
+    description = "Name of the virtual machine"
+  
+}
+
+variable "vmsize" {
+    type = number
+    description = "My virtual machine size"
+    default = 100
+}
+variable "osdiskname" {
+    type = string
+    description = " MY OS DIKS"
+}
+
+variable "cachingvalue" {
+    description = "My caching value"
+    type = string
+    default = true
+}
+variable "mystorage_account_type" {
+    type = string
+    description = " type of storage account "
+}
+variable "image_reference_publisher" {
+    type = string
+    description = "Image publisher"
+  
+}
+variable "image_reference_offer" {
+    type = string
+    description = "Image offer"
+  
+}
+variable "image_reference_sku" {
+    type = string
+
+}
+variable "image_reference_versiuon" {
+  type = string
+}
+variable "adminusername" {
+    type = string
+  
+}
+variable "password_authentication" {
+    type = string
+    default = "yes"
+  
+}
+variable "virtual_machine_name" {
+  type = string
+}
+variable "image_reference_version" {
+  type = string
+}
 
