@@ -68,9 +68,9 @@ variable "vm_name" {
 }
 
 variable "vmsize" {
-    type = number
+    type = string
     description = "My virtual machine size"
-    default = 100
+    
 }
 variable "osdiskname" {
     type = string
