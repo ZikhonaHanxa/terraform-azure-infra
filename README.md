@@ -14,6 +14,10 @@ Each version milestone represents a new building block in the cloud environment.
 - **v1.5** → Network Interface created with IP configuration parameters
 - **v1.6** → Network Interface and Network Security Group associasted.
 - **v1.7** → Up next is Storage account creation
+- **v1.8** → Storage account created
+- **Upcoming** → SSH key generation
+
+
 
 ---
 
